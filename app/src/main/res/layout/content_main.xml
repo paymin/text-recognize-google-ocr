@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <id.metamorfive.googleocr.GraphicOverlay
+        android:id="@+id/graphicOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSourcePreview-->
+    <!--android:id="@+id/preview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<com.google.android.gms.samples.vision.ocrreader.ui.camera.GraphicOverlay-->
+    <!--android:id="@+id/graphicOverlay"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--</com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSourcePreview>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_gravity="bottom"
+        android:background="#000"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIK 000000000"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT" />
+
+    </LinearLayout>
+
+</FrameLayout>
